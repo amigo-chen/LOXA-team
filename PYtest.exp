@@ -1,0 +1,66 @@
+(* @NESTEDCOMMENTS := 'Yes' *)
+(* @PATH := '' *)
+(* @OBJECTFLAGS := '0, 8' *)
+(* @SYMFILEFLAGS := '2048' *)
+PROGRAM Language
+(*auto generated language definition file DO NOT alter manually *)
+VAR
+END_VAR
+(* @END_DECLARATION := '0' *)
+(*auto generated language definition file DO NOT alter manually *)
+IF LanguageSet = 1 THEN
+	CASE WorkState OF
+	0 :
+		work_display := '';
+	1 :
+		work_display := 'remote Pump';
+	2 :
+		work_display := 'local pump';
+	3 :
+		work_display := 'Setting';
+	4 :
+		work_display := 'Maintenance';
+	5 :
+		work_display := 'Assistance';
+	6 :
+		work_display := 'Fault';
+	7 :
+		work_display := 'sdfe';
+	8 :
+		work_display := '456';
+	9 :
+		work_display := 'Concrete pump';
+	10 :
+		work_display := 'Boom';
+	11 :
+		work_display := 'Engine';
+	END_CASE ;
+END_IF
+IF LanguageSet = 2 THEN
+	CASE WorkState OF
+	0 :
+		work_display := '';
+	1 :
+		work_display := '遥控反泵';
+	2 :
+		work_display := '近控反泵';
+	3 :
+		work_display := '遥控正泵';
+	4 :
+		work_display := '近控正泵';
+	5 :
+		work_display := '水泵工作';
+	6 :
+		work_display := '退活塞';
+	7 :
+		work_display := '摆缸A动作';
+	8 :
+		work_display := '摆缸B动作';
+	9 :
+		work_display := '主缸A点动';
+	10 :
+		work_display := '主缸B点动';
+	11 :
+		work_display := '减速';
+	END_CASE ;
+END_IF

@@ -1,0 +1,9 @@
+outfile=open(outputFile,"w")
+
+outfile.write( """(* @NESTEDCOMMENTS := 'Yes' *)
+(* @PATH := '' *)
+(* @OBJECTFLAGS := '0, 8' *)
+(* @SYMFILEFLAGS := '2048' *)
+PROGRAM load_prmConfig_sp
+""")
+outfile.write("CASE prmID OF/n")
